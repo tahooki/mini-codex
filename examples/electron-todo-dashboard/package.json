@@ -1,0 +1,24 @@
+{
+  "name": "@mini-codex/electron-todo-dashboard-example",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.electron.json && tsc -p tsconfig.json && vite build",
+    "dev": "vite --host 127.0.0.1 --port 5175",
+    "start": "npm run build && electron dist-electron/main.js"
+  },
+  "dependencies": {
+    "mini-codex": "file:../..",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.2",
+    "electron": "^39.2.7",
+    "typescript": "^5.8.3",
+    "vite": "^7.2.7"
+  }
+}
